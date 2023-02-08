@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estillos.css">
+</head>
+<body>
+  <h1 class="titulo">Formulario:</h1>
+    <section class="formulario">
+        <form id="formId" action="">
+          <ul>
+            <li>
+            <label for="name">Nombres:</label>
+            <input type="text" id="nombreId" name="nombre" placeholder=""/>
+            <span id="errorMsg"></span>
+            </li>
+            <li>
+            <label for="apellido">Apellidos:</label>
+            <input type="text" id="apellidoId" name="apellido" placeholder=""/>
+            <span id="errorApellido"></span>
+
+            </li>
+            <li>
+            <label for="edad">Edad:</label>
+            <input type="number" id="edadId" name="edad" placeholder=""/>
+            <span id="errorApellido"></span>
+
+            </li>
+            <li>
+            <label for="direccion">Dirección:</label>
+            <input type="date" id="aniosId" name="anios" placeholder=""/>
+            </li>
+            <li>
+            <label for="mail">Correo Electrónico:</label>
+            <input type="email" id="emailId" name="email" placeholder=""/>
+            </li>
+            <li>
+            <label for="altura">Altura:</label>
+            <input type="range" id="mostraRangoId" name="" placeholder=""/>
+            </li>
+            <li>
+              <label>Nombre</label>
+              <select name="estadoCivil" id="estadoCivilId">
+                <option value="vSoltero">Soltero</option>
+                <option value="vCasado">Casado</option>
+              </select>
+            </li>  
+            <li>
+              <label for="mascotas">Tipo de mascotas:</label>
+              <span id="tipoMascotaError"></span>
+              <section class="mascotas" id="mascotasId">
+                <div>
+                <input type="checkbox" id="scales" name="scales" checked>
+                <label for="perro">Perro</label>
+                </div>
+                <div>
+                <input type="checkbox" id="scales" name="scales" checked>
+                <label for="scales">Gato</label>
+                </div>
+                <div>
+                <input type="checkbox" id="scales" name="scales" checked>
+                <label for="scales">Leon</label>
+                </div>
+                <div>
+                <input type="checkbox" id="horns" name="horns">
+                <label for="horns">Cerdo</label>
+                </div>
+              </section>
+            </li>
+            <li>
+              <label for="genero">Género:</label>
+              <section class="genero" id="generoId">
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label for="html">Hombre</label><br>
+                <input type="radio" id="css" name="fav_language" value="CSS">
+                <label for="css">Mujer</label><br>
+              </section>
+            </li>
+          </ul>  
+        </form>
+        
+    </section>
+    <button onclick="mandarData()" class="button" id="buttonId">
+      GUARDAR
+    </button>
+    <script src="main.js"></script>
+    
+</body>
+</html>
